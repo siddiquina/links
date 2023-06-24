@@ -5,6 +5,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #fffffe;
+        display: flex;
+        justify-content: center;
       }
 
       .banner-image {
@@ -23,25 +25,48 @@
 
       .name {
         color: #094067;
+        display: flex;
+        justify-content: center;
       }
-
-       .social-icons a {
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+       .social a {
         color: #094067; 
         text-decoration: none;
       }
+      .social{
+        display: flex;
+        justify-content: space-around;
+      }
 
        .item {
-        background-color: #3da9fc; 
+        background-color: #736aff; 
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
 
        .item-link {
         color: #fffffe; 
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
       }
+       .items {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         max-width: 640px;
+         flex-grow: 1;
+       }
     </style>
   </head>
 
 <body>
+  <div class="items">
+
   <div class="banner">
     <img src="94C00394-FD4C-4534-A3FF-611D55A434EF.jpeg" alt="Nasir Siddiqui headshot" class="banner-image">
   </div>
@@ -50,9 +75,9 @@
     Nasir Siddiqui
   </div>
   
-  <div class"social-icons">
+  <div class="social">
     <a href="https://github.com/siddiquina" target="_blank">
-      Github
+      GitHub
     </a>
 
     <a href="https://www.linkedin.com/in/nasir-siddiqui-" target="_blank">
@@ -79,7 +104,7 @@
   <div class="item">
     <img src="68776C70-35DF-4FBD-8F08-1D006DD4B4C9.jpeg" class="thumbnail">
 
-    <a class="item-link" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes 
+    <a class="item-link" target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in Ten Minutes 
       — Matthew Butterick</a>
   </div>
 
@@ -91,5 +116,7 @@
       Life-Saving Checklist 
       — The New Yorker</a>
   </div>
+
+</div>
 </body>
 </html>
